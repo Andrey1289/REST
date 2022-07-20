@@ -2,15 +2,15 @@ package andrey.service;
 
 import andrey.model.User;
 import andrey.repository.UserRepository;
-import andrey.repository.hibernateImplRepository.HibernateUserImpl;
+import andrey.repository.hibernate.HibernateUserRepositoryImpl;
 
 import java.util.List;
 
 public class UserService implements UserRepository {
-    private final HibernateUserImpl userRepo;
+    private final UserRepository userRepo;
 
     public UserService(){
-        userRepo= new HibernateUserImpl();
+        userRepo= new HibernateUserRepositoryImpl();
     }
 
     @Override

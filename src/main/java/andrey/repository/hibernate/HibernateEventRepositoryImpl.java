@@ -1,4 +1,4 @@
-package andrey.repository.hibernateImplRepository;
+package andrey.repository.hibernate;
 
 import andrey.model.Event;
 import andrey.repository.EventRepository;
@@ -7,20 +7,19 @@ import org.hibernate.Session;
 
 import java.util.List;
 
-public class HibernateEventImpl implements EventRepository {
+public class HibernateEventRepositoryImpl implements EventRepository {
     @Override
     public List<Event> getAll() {
-        Session session =  HibernateUtils.getSession();
-        List<Event> eventList = session.createQuery("From Event").list();
-        HibernateUtils.closeSession(session);
-        return eventList;
+        try(Session session = HibernateUtils.getSession()) {
+            return (List<Event>)session.createQuery("From Event").list();
+        }
     }
 
     @Override
     public Event getById(Long aLong) {
         Session session = HibernateUtils.getSession();
         Event event = session.get(Event.class, aLong);
-        HibernateUtils.closeSession(session);
+
         return event;
     }
 
@@ -29,14 +28,14 @@ public class HibernateEventImpl implements EventRepository {
         Session session = HibernateUtils.getSession();
         Event event = session.get(Event.class,aLong);
         session.delete(event);
-        HibernateUtils.closeSession(session);
+
     }
 
     @Override
     public Event save(Event event) {
         Session session = HibernateUtils.getSession();
         session.save(event);
-        HibernateUtils.closeSession(session);
+
         return event;
     }
 

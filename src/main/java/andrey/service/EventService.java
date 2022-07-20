@@ -2,15 +2,15 @@ package andrey.service;
 
 import andrey.model.Event;
 import andrey.repository.EventRepository;
-import andrey.repository.hibernateImplRepository.HibernateEventImpl;
+import andrey.repository.hibernate.HibernateEventRepositoryImpl;
 
 import java.util.List;
 
 public class EventService implements EventRepository {
-    private final HibernateEventImpl eventRepo;
+    private final EventRepository eventRepo;
 
     public EventService(){
-        eventRepo = new HibernateEventImpl();
+        eventRepo = new HibernateEventRepositoryImpl();
     }
 
     @Override

@@ -2,15 +2,15 @@ package andrey.service;
 
 import andrey.model.File;
 import andrey.repository.FileRepository;
-import andrey.repository.hibernateImplRepository.HibernateFileImpl;
+import andrey.repository.hibernate.HibernateFileRepositoryImpl;
 
 import java.util.List;
 
 public class FileService implements FileRepository {
-    private final HibernateFileImpl fileRepo;
+    private final FileRepository fileRepo;
 
     public FileService(){
-        fileRepo = new HibernateFileImpl();
+        fileRepo = new HibernateFileRepositoryImpl();
     }
 
     @Override

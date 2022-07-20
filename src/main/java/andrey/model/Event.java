@@ -11,9 +11,9 @@ public class Event {
     @OneToOne(fetch = FetchType.LAZY,cascade = CascadeType.ALL)
     @JoinColumn(name = "file_id")
     private File file;
-    @ManyToOne()
+    @ManyToOne
     @JoinColumn(name = "user_id")
-    private User users;
+    private User user;
 
     public Event() {
     }
@@ -40,11 +40,11 @@ public class Event {
     }
 
     public User getUsers() {
-        return users;
+        return user;
     }
 
     public void setUsers(User users) {
-        this.users = users;
+        this.user = users;
     }
 
     @Override
@@ -52,7 +52,7 @@ public class Event {
         return "Event{" +
                 "id=" + id +
                 ", file=" + file +
-                ", users=" + users +
+                ", users=" + user +
                 '}';
     }
 }

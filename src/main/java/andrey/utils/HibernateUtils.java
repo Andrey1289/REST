@@ -18,12 +18,8 @@ public class HibernateUtils {
         return sessionFactory;
     }
     public static Session getSession(){
-        session = sessionFactory.openSession();
-        transaction = session.beginTransaction();
+        session = getSessionFactory().openSession();
+
         return session;
-    }
-    public static void closeSession(Session session){
-        transaction.commit();
-        session.close();
     }
 }

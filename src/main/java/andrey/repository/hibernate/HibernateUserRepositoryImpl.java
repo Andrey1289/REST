@@ -1,4 +1,4 @@
-package andrey.repository.hibernateImplRepository;
+package andrey.repository.hibernate;
 
 import andrey.model.User;
 import andrey.repository.UserRepository;
@@ -7,20 +7,19 @@ import org.hibernate.Session;
 
 import java.util.List;
 
-public class HibernateUserImpl implements UserRepository {
+public class HibernateUserRepositoryImpl implements UserRepository {
     @Override
     public List<User> getAll() {
-        Session session = HibernateUtils.getSession();
-        List<User> users = session.createQuery("From User").list();
-        HibernateUtils.closeSession(session);
-        return users;
+      try(Session session = HibernateUtils.getSession()) {
+          return (List<User>) session.createQuery("From User").list();
+      }
     }
 
     @Override
     public User getById(Long aLong) {
         Session session = HibernateUtils.getSession();
         User user = session.get(User.class,aLong);
-        HibernateUtils.closeSession(session);
+
         return user;
     }
 
@@ -29,14 +28,13 @@ public class HibernateUserImpl implements UserRepository {
         Session session = HibernateUtils.getSession();
         User user = session.get(User.class,aLong);
         session.delete(user);
-        HibernateUtils.closeSession(session);
+
     }
 
     @Override
     public User save(User user) {
         Session session = HibernateUtils.getSession();
         session.save(user);
-        HibernateUtils.closeSession(session);
         return user;
     }
 
@@ -44,7 +42,6 @@ public class HibernateUserImpl implements UserRepository {
     public User update(User user) {
         Session session = HibernateUtils.getSession();
         session.update(user);
-        HibernateUtils.closeSession(session);
         return user;
     }
 }

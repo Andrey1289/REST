@@ -1,10 +1,8 @@
 package andrey.servlet;
 
 import andrey.model.Event;
-import andrey.repository.hibernateImplRepository.HibernateEventImpl;
 import andrey.service.EventService;
 import com.google.gson.Gson;
-import com.google.gson.JsonElement;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -15,8 +13,8 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
 
-@WebServlet(name = "Events", urlPatterns = "/events")
-public class EventServlet extends HttpServlet {
+@WebServlet(name = "Events", urlPatterns = "api/v1/events")
+public class EventRestControllerV1 extends HttpServlet {
 
     private EventService eventService = new EventService();
     private Gson gson = new Gson();
@@ -24,6 +22,7 @@ public class EventServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         try {
+
             PrintWriter writer = resp.getWriter();
             resp.setContentType("application/json");
             resp.setCharacterEncoding("UTF-8");
@@ -48,13 +47,13 @@ public class EventServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Event event = gson.fromJson(req.getReader(),Event.class);
-        eventService.update(event);
+        eventService.save(event);
     }
 
     @Override
     protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
        Event event = gson.fromJson(req.getReader(),Event.class);
-       eventService.save(event);
+       eventService.update(event);
     }
 
     @Override

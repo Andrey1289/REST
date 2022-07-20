@@ -10,7 +10,7 @@ public class User {
     private Long id;
     @Column(name = "user_name")
     private String name;
-    @OneToMany(mappedBy = "users")
+    @OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
     private List<Event> events;
 
     public User() {

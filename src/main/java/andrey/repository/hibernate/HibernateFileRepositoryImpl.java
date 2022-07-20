@@ -1,4 +1,4 @@
-package andrey.repository.hibernateImplRepository;
+package andrey.repository.hibernate;
 
 import andrey.model.File;
 import andrey.repository.FileRepository;
@@ -7,20 +7,19 @@ import org.hibernate.Session;
 
 import java.util.List;
 
-public class HibernateFileImpl implements FileRepository {
+public class HibernateFileRepositoryImpl implements FileRepository {
     @Override
     public List<File> getAll() {
-        Session session = HibernateUtils.getSession();
-        List<File> files = session.createQuery("From File").list();
-        HibernateUtils.closeSession(session);
-        return files;
+        try(Session session = HibernateUtils.getSession()) {
+            return (List<File>) session.createQuery("From File").list();
+        }
     }
 
     @Override
     public File getById(Long aLong) {
         Session session = HibernateUtils.getSession();
         File file = session.get(File.class,aLong);
-        HibernateUtils.closeSession(session);
+
         return null;
     }
 
@@ -29,14 +28,14 @@ public class HibernateFileImpl implements FileRepository {
         Session session = HibernateUtils.getSession();
         File file = session.get(File.class,aLong);
         session.delete(file);
-        HibernateUtils.closeSession(session);
+
     }
 
     @Override
     public File save(File file) {
         Session session = HibernateUtils.getSession();
         session.save(file);
-        HibernateUtils.closeSession(session);
+
         return file;
     }
 
@@ -44,7 +43,7 @@ public class HibernateFileImpl implements FileRepository {
     public File update(File file) {
         Session session = HibernateUtils.getSession();
         session.update(file);
-        HibernateUtils.closeSession(session);
+
         return file;
     }
 }

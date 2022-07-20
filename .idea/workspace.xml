@@ -4,7 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="773117b1-da5b-4609-b219-6ab2dcd62bbb" name="Changes" comment="" />
+    <list default="true" id="773117b1-da5b-4609-b219-6ab2dcd62bbb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/andrey/model/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/andrey/model/Event.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/andrey/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/andrey/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/andrey/repository/hibernateImplRepository/HibernateEventImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/andrey/repository/hibernate/HibernateEventRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/andrey/repository/hibernateImplRepository/HibernateFileImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/andrey/repository/hibernate/HibernateFileRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/andrey/repository/hibernateImplRepository/HibernateUserImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/andrey/repository/hibernate/HibernateUserRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/andrey/service/EventService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/andrey/service/EventService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/andrey/service/FileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/andrey/service/FileService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/andrey/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/andrey/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/andrey/servlet/EventServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/andrey/servlet/EventRestControllerV1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/andrey/servlet/FileServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/andrey/servlet/FileRestControllerV1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/andrey/servlet/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/andrey/servlet/UserRestControllerV1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/andrey/utils/HibernateUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/andrey/utils/HibernateUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +36,17 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
       <map>
@@ -30,7 +59,7 @@
       <map>
         <entry key="com.haulmont.jpb.jpaInspector" value="false" />
         <entry key="com.haulmont.jpb.jpaPalette" value="false" />
-        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
       </map>
     </option>
   </component>
@@ -43,6 +72,9 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../restapiepam" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -54,5 +86,17 @@
       <updated>1656923196875</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
