@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JpbDataSourceConfig">
+    <data-sources>
+      <data-source id="c42421dd-4ac9-4c72-9959-5dd75560e660" name="RestAPI" url="jdbc:mysql://localhost/RestAPI" driverClass="com.mysql.jdbc.Driver" />
+    </data-sources>
+  </component>
+</project>

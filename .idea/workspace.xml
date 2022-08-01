@@ -5,23 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="773117b1-da5b-4609-b219-6ab2dcd62bbb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy-datasource.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.jpb/persistence-units.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/flyway.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/v1/V1_1__create_users_schema.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/v1/V1_2__create_files_schema.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/v1/V1_3__create_events_schema.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/v1/V1_4__create_users_events_schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/andrey/model/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/andrey/model/Event.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/andrey/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/andrey/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/andrey/repository/hibernateImplRepository/HibernateEventImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/andrey/repository/hibernate/HibernateEventRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/andrey/repository/hibernateImplRepository/HibernateFileImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/andrey/repository/hibernate/HibernateFileRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/andrey/repository/hibernateImplRepository/HibernateUserImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/andrey/repository/hibernate/HibernateUserRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/andrey/service/EventService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/andrey/service/EventService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/andrey/service/FileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/andrey/service/FileService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/andrey/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/andrey/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/andrey/servlet/EventServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/andrey/servlet/EventRestControllerV1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/andrey/servlet/FileServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/andrey/servlet/FileRestControllerV1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/andrey/servlet/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/andrey/servlet/UserRestControllerV1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/andrey/utils/HibernateUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/andrey/utils/HibernateUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/andrey/model/File.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/andrey/model/File.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/andrey/repository/hibernate/HibernateUserRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/andrey/repository/hibernate/HibernateUserRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/andrey/servlet/EventRestControllerV1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/andrey/servlet/EventRestControllerV1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,22 +57,26 @@
       <map>
         <entry key="com.haulmont.jpb.jpaInspector" value="false" />
         <entry key="com.haulmont.jpb.jpaPalette" value="false" />
-        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
       </map>
     </option>
   </component>
   <component name="ProjectId" id="2BTHXWIDbMLMcLuHSKez8JNKWSf" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../restapiepam" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ServletsTutorial" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -98,5 +100,8 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

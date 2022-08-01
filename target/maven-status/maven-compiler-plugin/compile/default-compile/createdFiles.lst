@@ -1,0 +1,17 @@
+andrey\repository\hibernate\HibernateUserRepositoryImpl.class
+andrey\utils\HibernateUtils.class
+andrey\model\Event.class
+andrey\repository\GenericRepository.class
+andrey\repository\FileRepository.class
+andrey\repository\EventRepository.class
+andrey\repository\hibernate\HibernateEventRepositoryImpl.class
+andrey\model\User.class
+andrey\repository\hibernate\HibernateFileRepositoryImpl.class
+andrey\servlet\FileRestControllerV1.class
+andrey\model\File.class
+andrey\repository\UserRepository.class
+andrey\service\FileService.class
+andrey\servlet\EventRestControllerV1.class
+andrey\servlet\UserRestControllerV1.class
+andrey\service\EventService.class
+andrey\service\UserService.class

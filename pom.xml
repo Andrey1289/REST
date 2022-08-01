@@ -15,8 +15,8 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>17</maven.compiler.source>
-    <maven.compiler.target>17</maven.compiler.target>
+    <maven.compiler.source>16</maven.compiler.source>
+    <maven.compiler.target>16</maven.compiler.target>
     <hibernate-core.version>5.6.5.Final</hibernate-core.version>
     <tomcat.plugin.version>2.2</tomcat.plugin.version>
     <servlet.version>3.1.0</servlet.version>
@@ -45,6 +45,11 @@
       <artifactId>hibernate-core</artifactId>
       <version>${hibernate-core.version}</version>
     </dependency>
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>8.0.27</version>
+    </dependency>
 
   </dependencies>
 
@@ -59,6 +64,16 @@
         <configuration>
           <path>/</path>
           <port>8087</port>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.flywaydb</groupId>
+        <artifactId>flyway-maven-plugin</artifactId>
+        <version>9.0.1</version>
+        <configuration>
+          <configFiles>
+            <configFile>src/main/resources/db/migration/flyway.properties</configFile>
+          </configFiles>
         </configuration>
       </plugin>
       <plugin>

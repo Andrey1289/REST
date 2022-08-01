@@ -2,5 +2,7 @@
 <project version="4">
   <component name="JpaBuddyIdeaProjectConfig">
     <option name="defaultUnitInitialized" value="true" />
+    <option name="sourceModelValue" value="Default" />
+    <option name="targetDbValue" value="c42421dd-4ac9-4c72-9959-5dd75560e660" />
   </component>
 </project>

@@ -8,7 +8,7 @@ public class File   {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Column
+    @Column(name = "file_path")
     private String name;
     @OneToOne(mappedBy = "file", cascade = CascadeType.ALL)
     private Event event;
